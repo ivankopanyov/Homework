@@ -133,7 +133,14 @@ namespace Homework3
             {
                 Console.Write($"{abc[i]} ");
             }
-            Console.WriteLine("\n    ___________________");
+            Console.Write("\n    ");
+
+            for (int i = 0; i < lengthSide * 2 - 1; i++)
+            {
+                Console.Write("_");
+            }
+
+            Console.WriteLine();
 
             for (int y = 0; y < field.GetLength(1); y++)
             {
@@ -153,7 +160,14 @@ namespace Homework3
                 Console.Write("\n");
             }
 
-            Console.WriteLine("    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
+            Console.Write("    ");
+
+            for (int i = 0; i < lengthSide * 2 - 1; i++)
+            {
+                Console.Write("¯");
+            }
+
+            Console.WriteLine();
         }
     }
 }
